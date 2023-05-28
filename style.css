@@ -1,3 +1,4 @@
+/*Inicio*/
 @import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
 
 nav {
@@ -9,7 +10,7 @@ nav {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .navbar-list {
@@ -17,6 +18,7 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    justify-content: center !important;
 }
 
 .navbar-item {
@@ -25,15 +27,20 @@ nav {
     font-family: 'Spectral', serif;
     color: #0000;
     text-decoration: none;
-    
+    justify-content: center !important;
+
 
 }
-.navbar-item, a{
+
+.navbar-item,
+a {
     text-decoration: none;
     color: #000000;
     margin-left: 30px;
 }
-.navbar-item, a:hover{
+
+.navbar-item,
+a:hover {
     cursor: pointer;
     color: #4f884f;
 }
@@ -46,6 +53,7 @@ nav {
     border-top: 2px solid #000;
     margin-top: 20px;
     margin-left: 20px;
+    justify-content: center !important;
 }
 
 
@@ -53,14 +61,20 @@ nav {
     background: #C8E3C5;
     position: relative;
     font-family: 'Spectral', serif;
-    margin: none; 
+    margin: 0;
 }
-.text{
+.backg{
+    background: #C8E3C5;
+
+}
+
+.text {
     margin-top: 60px;
     font-size: 30px;
     margin-left: 160px;
 }
-.text2{
+
+.text2 {
     font-size: 30px;
     margin-left: 200px;
 }
@@ -74,7 +88,7 @@ nav {
     min-height: 600px;
     padding-top: 100px;
     background: #F7F7C6;
-    
+
 }
 
 .curve {
@@ -145,23 +159,6 @@ nav {
     text-align: justify;
 }
 
-button {
-    border-radius: 12px;
-    margin: 10px;
-    background: #FFC870;
-    font-size: 16px;
-    border: none;
-    padding: 15px 32px;
-    cursor: pointer;
-    font-family: 'Spectral', serif;
-}
-
-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    background-color: #adeaa7;
-    color: #000000;
-}
-
 .form-container {
     display: flex;
     flex-direction: column;
@@ -171,7 +168,7 @@ button:hover {
     margin-top: 200px;
     border-radius: 10px;
     font-family: 'Spectral', serif;
-    
+
 }
 
 .form-container,
@@ -181,31 +178,86 @@ textarea {
     border: none;
     align-items: center;
     justify-content: center;
-    
-    
+
+
 }
-input, textarea{
+
+input,
+textarea {
     width: 300px;
 }
-input{
+
+input {
     height: 30px;
 }
+
 .label-item {
     font-size: 17px;
     margin-right: 200px;
 }
-.label-item2{
+
+.label-item2 {
     font-size: 17px;
     margin-right: 170px;
 }
 
 
 
-.bg-cor{
+.bg-cor {
     background-color: #FFC870;
 }
 
 .tm-social {
     width: 40px;
     height: 40px;
+}
+
+
+/*Inicio*/
+
+/*Projetos*/
+.card {
+    border: none;
+    margin-left: 100px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.img {
+    border-radius: 100px;
+    width: 500px;
+    height: 400px;
+}
+
+.front,
+.back {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: #FFC870;
+    font-family: 'Spectral', serif;
+    position: relative;
+    justify-content: center;
+    border-radius: 100px;
+    
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0deg);
 }
