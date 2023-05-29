@@ -261,3 +261,6 @@ input {
 .card:hover .back {
     transform: rotateY(0deg);
 }
+.marg{
+    margin-left: 10px;
+}
