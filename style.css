@@ -338,13 +338,13 @@ input {
     }
 
     .icone {
-        font-size: 20px;
+        font-size: 30px;
         margin-left: 10px;
     }
 
     .icone2 {
-        font-size: 20px;
-        margin-left: 100px;
+        font-size: 30px;
+        margin-left: 140px;
     }
 
     .content {
@@ -371,6 +371,10 @@ input {
         margin-right: 20px;
         margin-top: 20px;
         position: static;
+    }
+    .margem{
+        margin-left: 10%;
+        width: 70%;
     }
 
     .curve::before {
