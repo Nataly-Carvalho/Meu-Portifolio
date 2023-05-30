@@ -401,6 +401,7 @@ input {
 
     .card {
         margin-left: 20px;
+        display:flex;
     }
 
     .img {
@@ -413,8 +414,9 @@ input {
         width: 300px;
         height: 250px;
         font-size: 100%;
+        height: auto;
     }
-
+    
     .vertical-line {
         display: none;
     }
