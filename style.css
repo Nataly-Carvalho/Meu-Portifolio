@@ -422,9 +422,23 @@ input {
     }
 
     .circle {
-        display: none;
+       margin-top: 0%;
+        background: #F7F7C6;
+        display: inline;
     }
-    .icon {
-        font-size: 40px;
+    .icon-container {
+
+        font-size: 10px;
+        margin: 30px;
+        
+    }
+    .hard{
+        text-justify:center;
+        margin: 0%;
+        margin-right: 20%;
+        
+    }
+    .titulo{
+        font-size: 20px;
     }
 }
