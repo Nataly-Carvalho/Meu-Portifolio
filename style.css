@@ -82,6 +82,9 @@ a:hover {
     font-size: 30px;
     margin-left: 200px;
 }
+.text3{
+    color: #000000;
+}
 
 .icone {
     font-size: 30px;
@@ -335,6 +338,9 @@ input {
     .text2 {
         font-size: 20px;
         margin-left: 40px;
+    }
+    .text5{
+        font-size: 50px;
     }
 
     .icone {
